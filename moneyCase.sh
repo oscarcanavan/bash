@@ -8,19 +8,18 @@
 moneyTester(){
 echo "Wie viel Geld hast du?"
 echo -n "€"
-read -r bar
+read -r foo
 #echo $bar
 
-if [ $bar -le 10 ]
+if [ $foo -ge 100000000 ]
 then
-  foo=1
-else
-  foo=2
+  foo=rich
 fi
 
 case $foo in
-  1) echo "Du bist wirklich pleite";;
-  2) echo "Arbeit mehr bitte";;
+  [1-50]) echo "Du bist wirklich pleite";;
+  [51-500]) echo "Arbeit mehr bitte";;
+  rich) echo "Du bist sehr reich glückwunsch";;
   *) echo "Bist du bescheurt? Geh nochmal" && moneyTester
   
 esac
