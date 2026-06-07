@@ -5,6 +5,7 @@
 
 
 echo "Wie viel Geld hast du?"
+echo -n "€"
 read -r bar
 #echo $bar
 
@@ -16,8 +17,8 @@ else
 fi
 
 case $foo in
-  1) echo "Arbeit mehr bitte";;
-  2) echo "Du bist wirklich pleite";;
-  *) echo "Du hast viel Geld"
+  1) echo "Du bist wirklich pleite";;
+  2) echo "Arbeit mehr bitte";;
+  *) echo "Bist du bescheurt?"
   
 esac
