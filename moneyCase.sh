@@ -5,7 +5,7 @@
 
 
 echo "Wie viel Geld hast du?"
-read -r bar;
+read -r bar
 #echo $bar
 
 if [ $bar -le 10 ]
@@ -16,9 +16,8 @@ else
 fi
 
 case $foo in
-  1)
-    echo "Sheißegal";;
-  *)
-    echo "Du hast viel Geld"
+  1) echo "Sheißegal";;
+    
+  *) echo "Du hast viel Geld"
   
 esac
