@@ -9,7 +9,6 @@ moneyTester(){
 echo "Wie viel Geld hast du?"
 echo -n "€"
 read -r foo
-#echo $bar
 
 if [ $foo -ge 100000000 ]
 then
