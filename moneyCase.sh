@@ -12,12 +12,12 @@ if [ $bar -le 10 ]
 then
   foo=1
 else
-  echo "testing my script"
+  foo=2
 fi
 
 case $foo in
-  1) echo "Sheißegal";;
-    
+  1) echo "Arbeit mehr bitte";;
+  2) echo "Du bist wirklich pleite";;
   *) echo "Du hast viel Geld"
   
 esac
