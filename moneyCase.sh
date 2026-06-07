@@ -16,7 +16,8 @@ then
 fi
 
 case $foo in
-  [1-50]) echo "Du bist wirklich pleite";;
+  # Range logic is kaputt
+  [1...50]) echo "Du bist wirklich pleite";;
   [51-500]) echo "Arbeit mehr bitte";;
   [501-999999]) echo "Geil";;
   rich) echo "Du bist sehr reich glückwunsch";;
