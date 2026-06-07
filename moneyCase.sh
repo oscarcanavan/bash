@@ -10,7 +10,7 @@ read -r bar
 
 if [ $bar -le 10 ]
 then
-  foo = 1
+  foo=1
 else
   echo "testing my script"
 fi
