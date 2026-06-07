@@ -10,7 +10,7 @@ echo "Wie viel Geld hast du?"
 echo -n "€"
 read -r foo
 
-if [ $foo -ge 100000000 ]
+if [ $foo -ge 1000000 ]
 then
   foo=rich
 fi
@@ -18,6 +18,7 @@ fi
 case $foo in
   [1-50]) echo "Du bist wirklich pleite";;
   [51-500]) echo "Arbeit mehr bitte";;
+  [501-999999]) echo "Geil";;
   rich) echo "Du bist sehr reich glückwunsch";;
   *) echo "Bist du bescheurt? Geh nochmal" && moneyTester
   
