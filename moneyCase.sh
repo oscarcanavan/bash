@@ -10,13 +10,15 @@ read -r bar;
 
 if [ $bar -le 10 ]
 then
-  echo "wenn"
+  foo = 1
 else
   echo "testing my script"
 fi
 
-case $bar in
+case $foo in
   1)
     echo "Sheißegal";;
+  *)
+    echo "Du hast viel Geld"
   
 esac
